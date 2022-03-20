@@ -1,3 +1,3 @@
 # groupDistribution
 
-the number of users added will added to random groups
+the number of users added will added to random groups!
