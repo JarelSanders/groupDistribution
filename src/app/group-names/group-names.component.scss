@@ -1,0 +1,35 @@
+button,
+input {
+  border-radius: 30px;
+}
+
+p {
+  margin-top: auto;
+}
+
+.addUser {
+  margin-top: auto;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  width: 10px !important;
+  -webkit-appearance: none;
+}
+
+.middle-action-area {
+  margin-left: 12%;
+}
+
+.container {
+  max-width: 800px;
+  padding-left: 30px;
+}
+
+#grpNum {
+  width: 100px;
+}
+
+#grpName {
+  margin-left: 27.5px;
+}

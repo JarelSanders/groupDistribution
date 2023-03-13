@@ -1,0 +1,88 @@
+<div class="container bg-light py-5">
+  <h1>Welcome to Group Distributor</h1>
+  <p class="fs-4">
+    Enter the number of groups and team members and they will randomly be added
+    to a group number
+  </p>
+  <ul>
+    <li>Enter the number of groups</li>
+    <li>Enter the names of the users you want to add to a group</li>
+  </ul>
+  <form [formGroup]="groupList" (ngSubmit)="addMember()">
+    <div class="container">
+      <!-- this is where the users will enter their group information. The number of groups and the group member names -->
+      <div class="middle-action-area">
+        <p>
+          Enter number of groups (1-8):
+
+          <span
+            ><input
+              type="number"
+              placeholder="Group Number"
+              class="usersArea"
+              id="grpNum"
+              [(ngModel)]="num"
+              formControlName="groupNum"
+              (input)="groupNumber()"
+              min="0"
+          /></span>
+        </p>
+
+        <p>
+          Enter your team members:
+          <span>
+            <input
+              type="text"
+              id="grpName"
+              placeholder="Add Users"
+              class="usersArea"
+              formControlName="groupName"
+              [(ngModel)]="addUser"
+              maxlength="15"
+          /></span>
+        </p>
+      </div>
+
+      <!-- puts users group number and names in groups -->
+      <div class="grpUsers">
+        <button
+          class="btn btn-primary btn-lg"
+          value="Group Teams/Submit"
+          type="button"
+          (click)="addMember()"
+        >
+          Add Member
+        </button>
+        <!-- (click)="submitRequest()">Add Member</button> -->
+
+        <button
+          class="btn btn-primary btn-lg"
+          value="Group Teams/Submit"
+          type="button"
+          (click)="groupTeams()"
+        >
+          Group Teams
+        </button>
+        <button
+          class="btn btn-primary btn-lg"
+          value="Group Teams/Submit"
+          (click)="resetPage()"
+          type="button"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+  </form>
+  <br />
+  <p>
+    Group(s): <span>{{ num }}</span>
+  </p>
+  <p>Team Member(s):</p>
+  <div class="test" *ngFor="let name of names; let index = index" id="grpFinal">
+    Team member: {{ name.User }} - Group Number:
+    <span id="resultgroup" class="resultgroup2" [hidden]="isShow">{{
+      name.Group
+    }}</span>
+  </div>
+</div>
