@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-  background-color: rgb(143, 134, 197);
+html, body {
+  // background-color: rgb(219, 217, 233);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: linear-gradient(178.6deg, rgb(149, 179, 206) 11.8%, rgb(124, 143, 161) 83.8%);
+
 }

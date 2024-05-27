@@ -18,21 +18,28 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class GroupNamesComponent implements OnInit {
   groupList = new FormGroup({
-    groupName: new FormControl(''),
-    groupNum: new FormControl(''),
+    groupName: new FormControl(''), //// FormControl for group name, initially empty.
+    groupNum: new FormControl(''), //// FormControl for group number, initially empty.
   });
 
+  // Declares an array to store names and groups.
   names: Todo[] = [];
+  // Boolean to toggle the visibility of certain UI elements.
   isShow: boolean = false;
+  // String to store the name of the user being added.
   addUser: String = '';
+  // Variable to store the group number input, with a flexible type.
   num: any = [];
 
   constructor() {}
 
+  // Lifecycle hook that runs after the component's view has been initialized
   ngOnInit(): void {
+     // Resets the names array to be empty when the component is initialized.
     this.names = [];
   }
 
+    // Function to handle the group number input validation.
   groupNumber = () => {
     this.num = (<HTMLInputElement>document.getElementById('grpNum')).value;
     let num = <HTMLInputElement>document.getElementById('grpNum');
