@@ -1,27 +1,25 @@
-# GroupDistribution
+# 👥 Group Distribution App  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+![Status](https://img.shields.io/badge/Status-Completed-green)  
 
-## Development server
+### 🚀 Seamlessly assign users to groups!  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This **Group Distribution App** is an Angular-based web application that allows users to enter a number and specify teams, then automatically assigns users to groups. It streamlines team assignments with a user-friendly interface.  
 
-## Code scaffolding
+## 🛠️ Technologies Used  
+- **Frontend:** Angular 13+, TypeScript, HTML5, CSS3  
+- **Frameworks & Libraries:** Bootstrap (for styling)  
+- **Tools:** Angular CLI, Git, Karma (for testing)  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ✨ Features  
+✅ **Dynamic Group Assignment** – Users input numbers and teams, and the app distributes them efficiently.  
+✅ **User-Friendly Interface** – Built with Angular and Bootstrap for a clean UI.  
+✅ **Real-Time Updates** – The app automatically updates group assignments.  
+✅ **Scalable & Fast** – Lightweight and efficient performance.  
 
-## Build
+## 🔧 Installation & Setup  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1️⃣ **Clone the Repository:**  
+```sh
+git clone https://github.com/JarelSanders/groupDistribution.git
+cd groupDistribution
